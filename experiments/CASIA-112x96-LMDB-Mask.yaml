@@ -1,0 +1,64 @@
+CUDNN:
+  BENCHMARK: true
+  DETERMINISTIC: false
+  ENABLED: true
+DATASET:
+  IS_GRAY: false
+  LFW_CLASS: 6000
+  LFW_OCC_PATH: data/datasets/lfw-occ/lfw-112X96-factor2.0/
+  LFW_PAIRS: data/datasets/lfw-occ/pairs.txt
+  LFW_PATH: data/datasets/lfw-occ/lfw-112X96/
+  NUM_CLASS: 10572
+  ROOT: data/datasets/
+  ROT_FACTOR: 0
+  SCALE_FACTOR: 0
+  TEST_DATASET: LFW
+  TRAIN_DATASET: WebFace
+LOSS:
+  TYPE: CosMargin
+  WEIGHT_DIFF: 0
+  WEIGHT_MASK: 100
+  WEIGHT_PRED: 10
+NETWORK:
+  IMAGE_SIZE:
+  - 112
+  - 96
+  PRETRAINED: true
+  WEIGHT_FC: ''
+  WEIGHT_MODEL: ''
+TEST:
+  BATCH_SIZE: 64
+  MODE: Mask
+  MODEL_FILE: ''
+  SHUFFLE: false
+  STATE: ''
+  WORKERS: 8
+TRAIN:
+  BACKBONE_MODEL: LResNet50E_IR
+  BATCH_SIZE: 64
+  END_EPOCH: 40
+  GAMMA1: 0.99
+  GAMMA2: 0.0
+  GPUS: 0,1,2,3,4,5,6,7
+  LOG_DIR: log
+  LR: 0.001
+  LR_FACTOR: 0.1
+  LR_FREEZE: 0.1
+  LR_STEP:
+  - 10
+  - 25
+  MODE: Mask
+  MODEL: LResNet50E_IR_Occ
+  MOMENTUM: 0.9
+  NESTEROV: false
+  OPTIMIZER: sgd
+  OUTPUT_DIR: output
+  PRINT_FREQ: 100
+  RESUME: ''
+  RESUME_FC: ''
+  SHUFFLE: true
+  START_EPOCH: 0
+  WD: 0.0005
+  WORKERS: 8
+  NUM_MASK: 101
+  PATTERN: 4
