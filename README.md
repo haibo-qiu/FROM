@@ -12,31 +12,31 @@ Main packages:
 - pyarrow=0.17.0
 
 Or directly create a conda env with
-```
-conda env create -f environment.yml
-```
+  ```
+  conda env create -f environment.yml
+  ```
 
 ## Data preparation
-1. Training data (```data/datasets```) and pretrained models (```pretrained/```) can be found [here](https://drive.google.com/drive/folders/12r0QEQFb8MOxh1ZtX679Pnx4g8hknLOg?usp=sharing).
+1. Training data (`data/datasets`) and pretrained models (`pretrained/`) can be found here ([Google drive](https://drive.google.com/drive/folders/12r0QEQFb8MOxh1ZtX679Pnx4g8hknLOg?usp=sharing), [BaiduYun](https://pan.baidu.com/s/1VjuE1nqfytiTYjYWuxP7rA):76n5).
 
-2. Please refer to ```data/generate_lmdb.py``` for the lmdb file generation of training data.
+2. Please refer to `data/generate_lmdb.py` for the lmdb file generation of training data.
 
-3. Please refer to ```data/generate_occ_lfw.py``` for the occluded testing images generation.
+3. Please refer to `data/generate_occ_lfw.py` for the occluded testing images generation.
 
 ## Training
 Simply run the following script:
-```
-bash start.sh
-```
+  ```
+  bash start.sh
+  ```
 
 ## Testing
-1. To reproduce the results in our paper, please download the [pretrained models](https://drive.google.com/drive/folders/12r0QEQFb8MOxh1ZtX679Pnx4g8hknLOg?usp=sharing) and put them in ```pretrained/```, then run:
-```
-bash eval.sh
-```
-2. For megaface testing, the related commonds are included in ```eval.sh```. Current ```lib/core/megaface_mp.py``` generates npy file for each sample, which can be evaluated with [FaceX-Zoo](https://github.com/JDAI-CV/FaceX-Zoo/tree/main/test_protocol/megaface). Or you can switch the generated function in ```lib/core/megaface_mp.py``` to produce bin file and use [official devkit](https://megaface.cs.washington.edu/participate/challenge.html) for evaluation. 
+1. To reproduce the results in our paper, please download the [pretrained models](https://drive.google.com/drive/folders/12r0QEQFb8MOxh1ZtX679Pnx4g8hknLOg?usp=sharing) and put them in `pretrained/`, then run:
+    ```
+    bash eval.sh
+    ```
+2. For megaface testing, the related commonds are included in `eval.sh`. Current `lib/core/megaface_mp.py` generates npy file for each sample, which can be evaluated with [FaceX-Zoo](https://github.com/JDAI-CV/FaceX-Zoo/tree/main/test_protocol/megaface). Or you can switch the generated function in `lib/core/megaface_mp.py` to produce bin file and use [official devkit](https://megaface.cs.washington.edu/participate/challenge.html) for evaluation. 
 
-3. The AR Face dataset evaluation scripts are also included in ```eval.sh```
+3. The AR Face dataset evaluation scripts are also included in `eval.sh`.
 
 ## Acknowledgement
 The code is partially developed from [PDSN](https://github.com/linserSnow/PDSN). The [occluders images](https://drive.google.com/drive/folders/12r0QEQFb8MOxh1ZtX679Pnx4g8hknLOg?usp=sharing) are also from [PDSN](https://github.com/linserSnow/PDSN).
