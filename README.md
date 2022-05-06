@@ -1,6 +1,7 @@
 # End2End Occluded Face Recognition by Masking Corrupted Features
-This is the Pytorch implementation of our TPAMI 2021 paper [End2End Occluded Face Recognition by Masking Corrupted Features](https://arxiv.org/abs/2108.09468). 
-<br>Haibo Qiu, Dihong Gong, Zhifeng Li, Wei Liu and Dacheng Tao<br>
+This is the Pytorch implementation of our TPAMI 2021 paper 
+>[End2End Occluded Face Recognition by Masking Corrupted Features](https://arxiv.org/abs/2108.09468). 
+><br>Haibo Qiu, Dihong Gong, Zhifeng Li, Wei Liu and Dacheng Tao<br>
 
 ## Requirements
 Main packages:
