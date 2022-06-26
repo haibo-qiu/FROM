@@ -44,7 +44,7 @@ The code is partially developed from [PDSN](https://github.com/linserSnow/PDSN).
 
 ## Citation
 If you use our code or models in your research, please cite with:
-```
+```bibtex
 @article{qiu2021end2end,
   title={End2End occluded face recognition by masking corrupted features},
   author={Qiu, Haibo and Gong, Dihong and Li, Zhifeng and Liu, Wei and Tao, Dacheng},
