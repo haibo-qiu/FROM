@@ -20,9 +20,9 @@ Or directly create a conda env with
 ## Data preparation
 1. Training data (`data/datasets`) and pretrained models (`pretrained/`) can be found here ([Google drive](https://drive.google.com/drive/folders/12r0QEQFb8MOxh1ZtX679Pnx4g8hknLOg?usp=sharing), [BaiduYun](https://pan.baidu.com/s/1VjuE1nqfytiTYjYWuxP7rA):76n5). `CASIA-112x96-LMDB.lmdb` is for training, `lfws.zip` and `ar_face_data.tar.gz` are for testing. 
 
-2. (Optional) Please refer to `data/generate_lmdb.py` for the lmdb file generation of training data.
+2. (Optional) Please refer to `data/generate_lmdb.py` in case you want to know the lmdb file generation of training data.
 
-3. (Optional) Please refer to `data/generate_occ_lfw.py` for the occluded testing images generation.
+3. (Optional) Please refer to `data/generate_occ_lfw.py` in case you want to know the occluded testing images generation.
 
 ## Training
 Simply run the following script:
